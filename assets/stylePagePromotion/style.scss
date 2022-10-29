@@ -47,11 +47,9 @@
 .promotion-title-wrapper {
     width: 55%;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin: 8vh 0 11.3vh 0;
 }
 .promotion__title {
@@ -79,7 +77,6 @@ text-align: center;
     align-items: center;
     padding: 13.8vh 0 8.3vh;
 
-    border-top: 1px solid rgba(210, 210, 210, 1);
     border-bottom: 1px dashed rgba(210, 210, 210, 1);
 }
 .promotion-formats__title, .promotion-cases__title, .benefits__title{
