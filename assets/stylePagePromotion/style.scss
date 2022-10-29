@@ -3,6 +3,34 @@
     padding: 0%;
     box-sizing: border-box;
 }
+@import "../fonts/font/stylesheet.css";
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+  
+    src: local("Gilroy"),
+         url("../stylePagePromotion/fonts/font/Gilroy-Regular.woff2") format("woff2"),
+         url("../stylePagePromotion/fonts/font/Gilroy-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Gilroy";
+    font-weight: bold;
+  
+    src: local("Gilroy"),
+         url("../stylePagePromotion/fonts/font/Gilroy-Black.woff2") format("woff2"),
+         url("../stylePagePromotion/fonts/font/Gilroy-Black.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+  
+    src: local("Gilroy"),
+         url("../stylePagePromotion/fonts/font/Gilroy-Semibold.woff2") format("woff2"),
+         url("../stylePagePromotion/fonts/font/Gilroy-Semibold.woff") format("woff");
+  }
+
 @mixin fontFam {
     font-family: 'Gilroy', 'sans serif';
     font-style: normal;
@@ -234,6 +262,7 @@ padding-left: 1.6rem;
     font-weight: 900;
     line-height: 24px;
     color: rgba(46, 154, 219, 1);
+    text-transform: uppercase;
     text-align: center;
 
     display: block;
