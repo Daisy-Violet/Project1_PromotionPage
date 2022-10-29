@@ -138,8 +138,11 @@ text-align: center;
 .promotion__item {
     width: 11.3vw;
     height: 24vh;
-    padding: 1.5rem;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
 }
@@ -153,9 +156,6 @@ text-align: center;
     line-height: 19px;
     color: rgba(147, 147, 147, 1);
     padding-top: 2.7vh;
-}
-.promotion__third-item {
-    padding-top: 2.5rem;
 }
 .promotion__eighth-item img {
 padding-left: 1.6rem;
@@ -183,12 +183,22 @@ padding-left: 1.6rem;
     color: black;
     padding-top: 2vh;
 }
-.case__item {
+.case__item:not(.case__third-item) {
     height: 27.7vh;
     width: 21.4vw;
     border-right: 1px solid rgba(235, 235, 235, 1);
-    text-align: center;
-    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.case__third-item {
+    width: 21.4vw;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .case__item h5 {
     @include fontFam;
@@ -211,6 +221,8 @@ padding-left: 1.6rem;
     font-weight: 500;
     line-height: 24px;
     color: rgba(46, 154, 219, 1);
+    width: 80%;
+
 }
 .joom-case__items, .loto-case__items, .vpn-case__items, .ultima-case__items {
     height: 27.7vh;
@@ -219,10 +231,9 @@ padding-left: 1.6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     border: 1px solid rgba(235, 235, 235, 1);
     box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
-
 }
 .promotion-benefits-container {
     width: 90%;
