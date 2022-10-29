@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.promotion-container {
+  margin: 4rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
+}
+
+.promotion-title-wrapper {
+  width: 55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8vh 0 11.3vh 0;
+}
+
+.promotion__title {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(46, 154, 219);
+  padding-bottom: 1rem;
+}
+
+.promotion__text {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: rgb(147, 147, 147);
+  text-align: center;
+}
+
+.promotion-formats-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13.8vh 0 8.3vh;
+  border-top: 1px solid rgb(210, 210, 210);
+  border-bottom: 1px dashed rgb(210, 210, 210);
+}
+
+.promotion-formats__title, .promotion-cases__title, .benefits__title {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  padding-bottom: 4.1vh;
+  text-align: center;
+}
+
+.promotion-formats__first-row-items {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 4.1vh 0;
+}
+
+.promotion-formats__second-row-items {
+  width: 53%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: center;
+}
+
+.promotion__item {
+  width: 11.3vw;
+  height: 24vh;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
+}
+
+.promotion__item a {
+  text-decoration: none;
+}
+
+.promotion__item p {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: rgb(147, 147, 147);
+  padding-top: 2.7vh;
+}
+
+.promotion__third-item {
+  padding-top: 2.5rem;
+}
+
+.promotion__eighth-item img {
+  padding-left: 1.6rem;
+}
+
+.promotion-cases-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8.3vh 0;
+  border-bottom: 1px dashed rgb(210, 210, 210);
+}
+
+.joom-case-block, .vpn-case-block, .loto-case-block, .ultima-case-block {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.case-logo-box {
+  margin: 2vh auto 8.3vh;
+}
+
+.case-logo-box p {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: black;
+  padding-top: 2vh;
+}
+
+.case__item {
+  height: 27.7vh;
+  width: 21.4vw;
+  border-right: 1px solid rgb(235, 235, 235);
+  text-align: center;
+  padding: 1.8rem;
+}
+
+.case__item h5 {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: rgb(147, 147, 147);
+  padding-bottom: 1rem;
+}
+
+.case__item p:not(.case__item-blue) {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.case__item-blue {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(46, 154, 219);
+}
+
+.joom-case__items, .loto-case__items, .vpn-case__items, .ultima-case__items {
+  height: 27.7vh;
+  width: 64.4vw;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
+}
+
+.promotion-benefits-container {
+  width: 90%;
+}
+
+.benefits__title {
+  padding: 8.3vh 0;
+}
+
+.benefit__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.benefit__item img {
+  margin: 0;
+  padding: 0;
+}
+
+.benefit__item p {
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  margin: 1.5vw;
+  padding: 0;
+}
+
+.benefit__items {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.promotion-btn {
+  background: #FFFFFF;
+  border: 4px solid #2E9ADB;
+  border-radius: 40px;
+  font-family: "Gilroy", "sans serif";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  color: rgb(46, 154, 219);
+  text-align: center;
+  display: block;
+  margin: 9vh auto;
+  width: 22.7vw;
+  height: 11vh;
+  cursor: pointer;
+}
+
+.promotion-btn:hover {
+  background-color: rgb(232, 242, 250);
+}/*# sourceMappingURL=style.css.map */
