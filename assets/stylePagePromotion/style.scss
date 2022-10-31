@@ -200,13 +200,21 @@ padding-left: 1.6rem;
     justify-content: space-between;
     align-items: center;
 }
+.case__third-item-exception {
+    width: 21.4vw;
+    margin-bottom: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .case__item h5 {
     @include fontFam;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     color: rgba(147, 147, 147, 1);
-    padding-bottom: 1rem;
+    padding-bottom: 2vh;
 }
 .case__item p:not(.case__item-blue) {
     @include fontFam;
