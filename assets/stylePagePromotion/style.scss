@@ -50,7 +50,6 @@
     text-align: center;
     text-transform: uppercase;
 }
-
 @mixin hLower-desktop {
     font-weight: 900;
     font-size: 30px;
@@ -64,7 +63,6 @@
 }
 .promotion-container {
     margin: 4rem auto;
-    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +71,6 @@
     box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
 }
 .promotion-title-wrapper {
-    width: 55%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -81,69 +78,38 @@
     margin: 8vh 0 11.3vh 0;
 }
 .promotion__title {
-@include fontFam;
-font-size: 60px;
-font-weight: 900;
-line-height: 75px;
-text-align: center;
-text-transform: uppercase;
-color: rgba(46, 154, 219, 1);
-padding-bottom: 1rem;
+    @include fontFam;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(46, 154, 219, 1);
+    padding-bottom: 1rem;
 }
 .promotion__text {
-@include fontFam;
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-color: rgba(147, 147, 147, 1);
-text-align: center;
+    @include fontFam;
+    font-weight: 500;
+    color: rgba(147, 147, 147, 1);
+    text-align: center;
 }
 .promotion-formats-container {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 13.8vh 0 8.3vh;
+    padding-bottom: 8.3vh;
 
     border-bottom: 1px dashed rgba(210, 210, 210, 1);
 }
-.promotion-formats__title, .promotion-cases__title, .benefits__title{
+.promotion-formats__title, .promotion-cases__title, .benefits__title {
     @include fontFam;
-    font-size: 20px;
     font-weight: 700;
-    line-height: 24px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 1);
 
     padding-bottom: 4.1vh;
     text-align: center;
 }
-.promotion-formats__first-row-items {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin: 4.1vh 0;
-}
-.promotion-formats__second-row-items {
-    width: 53%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    text-align: center;
+.promotion-formats__title {
+    padding-top: 10vh;
 }
 .promotion__item {
-    width: 11.3vw;
-    height: 24vh;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
 }
 .promotion-formats-container a {
@@ -151,14 +117,8 @@ text-align: center;
 }
 .promotion__item p {
     @include fontFam;
-    font-size: 16px;
     font-weight: 700;
-    line-height: 19px;
     color: rgba(147, 147, 147, 1);
-    padding-top: 2.7vh;
-}
-.promotion__eighth-item img {
-padding-left: 1.6rem;
 }
 .promotion-cases-container {
     width: 90%;
@@ -177,71 +137,25 @@ padding-left: 1.6rem;
 }
 .case-logo-box p {
     @include fontFam;
-    font-size: 16px;
     font-weight: 700;
-    line-height: 19px;
     color: black;
     padding-top: 2vh;
 }
-.case__item:not(.case__third-item) {
-    height: 27.7vh;
-    width: 21.4vw;
-    border-right: 1px solid rgba(235, 235, 235, 1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.case__third-item {
-    width: 21.4vw;
-    margin-bottom: 4vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.case__third-item-exception {
-    width: 21.4vw;
-    margin-bottom: 0.5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 .case__item h5 {
     @include fontFam;
-    font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
     color: rgba(147, 147, 147, 1);
     padding-bottom: 2vh;
 }
 .case__item p:not(.case__item-blue) {
     @include fontFam;
-    font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
     color: rgba(0, 0, 0, 1);
 }
 .case__item-blue {
     @include fontFam;
-    font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
     color: rgba(46, 154, 219, 1);
-    width: 80%;
-
-}
-.joom-case__items, .loto-case__items, .vpn-case__items, .ultima-case__items {
-    height: 27.7vh;
-    width: 64.4vw;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba(235, 235, 235, 1);
-    box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
 }
 .promotion-benefits-container {
     width: 90%;
@@ -262,9 +176,7 @@ padding-left: 1.6rem;
 }
 .benefit__item p {
     @include fontFam;
-    font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
     color: rgba(0, 0, 0, 1);
 
     margin: 1.5vw;
@@ -277,7 +189,6 @@ padding-left: 1.6rem;
 .promotion-btn {
     @include btnWhiteBorder;
     @include fontFam;
-    font-size: 20px;
     font-weight: 900;
     line-height: 24px;
     color: rgba(46, 154, 219, 1);
@@ -286,10 +197,242 @@ padding-left: 1.6rem;
 
     display: block;
     margin: 9vh auto;
-    width: 22.7vw;
-    height: 11vh;
     cursor: pointer;
 }
 .promotion-btn:hover {
     background-color: rgb(232, 242, 250);
+}
+@media screen and (min-width: 768px) {
+    .promotion-container {
+        width: 80%;
+    }
+    .promotion-title-wrapper {
+        width: 55%;
+    }
+    .promotion__title {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    .promotion__text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .promotion-formats__title, .promotion-cases__title, .benefits__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .promotion-formats-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .promotion__item {
+        width: 11.3vw;
+        height: 24vh;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 4.1vh 1.2vw;
+    }
+    .promotion__item p {
+        font-size: 16px;
+        line-height: 19px;
+        padding-top: 2.7vh;
+    }
+    .promotion__third-item p {
+        padding-top: 4vh;
+    }
+    .promotion__eighth-item img {
+        padding-left: 1.6rem;
+    }
+    .joom-case__items, .loto-case__items, .vpn-case__items, .ultima-case__items {
+        height: 27.7vh;
+        width: 64.4vw;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(235, 235, 235, 1);
+        box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
+    }
+    .case__item:not(.case__third-item) {
+        height: 27.7vh;
+        width: 21.4vw;
+        border-right: 1px solid rgba(235, 235, 235, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .case__third-item {
+        width: 21.4vw;
+        margin-bottom: 4vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .case__third-item-exception {
+        width: 21.4vw;
+        margin-bottom: 0.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .case-logo-box p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .case__item h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .case__item p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .case__item-blue {
+        width: 80%;
+    }
+    .benefit__item p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .promotion-btn {
+        font-size: 20px;
+        width: 22.7vw;
+        height: 11vh;
+    }
+}
+@media screen and (max-width: 767px) {
+    .promotion-container {
+        width: 85%;
+    }
+    .promotion-line {
+        display: none;
+    }
+    .promotion-title-wrapper {
+        width: 90%;
+    }
+    .promotion__title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .promotion__text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .promotion-formats__title, .promotion-cases__title, .benefits__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .promotion-formats__title {
+        width: 90%;
+        border-top: 1px solid rgba(210, 210, 210, 1);
+    }
+    .promotion-formats-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .promotion__item {
+        width: 24vw;
+        height: 17.3vh;
+        margin: 2.3vh 3.2vw;
+        padding: 3vh 8vw;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .promotion__item img{
+        max-width: 100%;
+    }
+    .promotion__item p {
+        font-size: 13px;
+        line-height: 15px;
+        padding-top: 2vh;
+    }
+    .promotion__first-item img {
+        max-width: 80%;
+    }
+    .promotion__second-item {
+        padding: 3vh 4vw;
+    }
+    .promotion__second-item img {
+        max-width: 60%;
+    }
+    .promotion__third-item {
+        padding: 3vh 4vw;
+    }
+    .promotion__third-item img {
+        max-width: 100%;
+        margin-bottom: 0.2vh;
+    }
+    .promotion__eighth-item img {
+        margin-left: 2vw;
+        width: 100%;
+    }
+    .joom-case__items, .loto-case__items, .vpn-case__items, .ultima-case__items {
+        height: 52vh;
+        width: 57vw;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgba(235, 235, 235, 1);
+        box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.08);
+    }
+    .case__item {
+        width: 90%;
+        border-bottom: 1px solid rgba(235, 235, 235, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .case__item-blue {
+        width: 100%;
+    }
+    .case-logo-box p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .case__item {
+        padding: 2vh auto;
+    }
+    .case__item h5 {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .case__item p {
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 5vh;
+    }
+    .benefit__item img {
+        max-width: 10%;
+        margin-right: 2vw;
+    }
+    .benefit__item p {
+        font-size: 13px;
+        line-height: 15.3px;
+    }
+    .promotion-btn {
+        font-size: 16px;
+        width: 80%;
+        height: 10vh;
+        padding: 2.6vh auto;
+    }
 }
