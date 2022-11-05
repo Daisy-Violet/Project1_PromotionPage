@@ -359,16 +359,25 @@
         font-size: 16px;
     }
 }
-
-@media screen and (max-width: 767px) {
-    .promotion-container {
-        width: 85%;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .promotion-line {
+        width: 80%;
     }
+    .promotion-mobile-line {
+        display: none;
+    }
+}
+@media screen and (max-width: 479px) {
     .promotion-line {
         display: none;
     }
     .promotion-mobile-line {
         max-width: 80%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .promotion-container {
+        width: 85%;
     }
     .promotion-title-wrapper {
         width: 90%;
