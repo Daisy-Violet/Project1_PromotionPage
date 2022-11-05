@@ -207,6 +207,9 @@
     .promotion-mobile-line {
         display: none;
     }
+    .promotion-line {
+        width: 80%;
+    }
     .promotion-title-wrapper {
         width: 55%;
     }
@@ -325,7 +328,7 @@
         justify-content: center;
     }
     .promotion-line {
-        display: none;
+        width: 80%;
     }
     .promotion__item {
         width: 24vw;
@@ -363,6 +366,9 @@
     }
     .promotion-line {
         display: none;
+    }
+    .promotion-mobile-line {
+        max-width: 80%;
     }
     .promotion-title-wrapper {
         width: 90%;
@@ -486,5 +492,13 @@
         font-size: 18px;
         width: 265px;
         height: 70px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .promotion-btn {
+        font-size: 13px;
+        width: 160px;
+        height: 40px;
+        padding: 2vh auto;
     }
 }
